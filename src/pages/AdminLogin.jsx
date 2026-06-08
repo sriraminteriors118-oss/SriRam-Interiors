@@ -86,8 +86,9 @@ const AdminLogin = () => {
           </button>
         </form>
         
-        <div className="mt-6 text-center text-xs text-text/40">
-          Restricted access. Authorized personnel only.
+        <div className="mt-6 text-center text-xs text-text/60">
+          <p>Restricted access. Authorized personnel only.</p>
+          <p className="mt-2 font-medium">Demo Credentials: admin / admin123</p>
         </div>
       </motion.div>
     </div>

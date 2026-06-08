@@ -80,8 +80,20 @@ export const AppDataProvider = ({ children }) => {
     }
   };
 
+  const deleteProject = (projectId) => {
+    const projectToDelete = projects.find(p => p.id === projectId);
+    if (!projectToDelete) return;
+
+    setProjects(projects.filter(p => p.id !== projectId));
+
+    // Clean up gallery items added by this project
+    setGalleryItems(galleryItems.filter(item => {
+      return !item.title.startsWith(projectToDelete.title);
+    }));
+  };
+
   const loginAdmin = (username, password) => {
-    if (username === 'Shiva Porandla' && password === 'SriramInteriors@123') {
+    if (username === 'admin' && password === 'admin123') {
       setIsAdminAuth(true);
       return true;
     }
@@ -97,6 +109,7 @@ export const AppDataProvider = ({ children }) => {
       galleryItems,
       projects,
       addProject,
+      deleteProject,
       isAdminAuth,
       loginAdmin,
       logoutAdmin

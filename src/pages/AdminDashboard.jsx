@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { LogOut, Plus, Image as ImageIcon, CheckCircle, X } from 'lucide-react';
+import { LogOut, Plus, Image as ImageIcon, CheckCircle, X, Trash2 } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 
 const AdminDashboard = () => {
-  const { isAdminAuth, logoutAdmin, addProject } = useAppData();
+  const { isAdminAuth, logoutAdmin, addProject, projects, deleteProject } = useAppData();
   const navigate = useNavigate();
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -254,6 +254,48 @@ const AdminDashboard = () => {
             </div>
           </form>
         </div>
+
+        {/* Manage Projects Section */}
+        <div className="mt-12 bg-surface rounded-xl shadow-xl border border-text/5 overflow-hidden">
+          <div className="p-6 border-b border-text/10 bg-text/5">
+            <h2 className="text-xl font-semibold text-text flex items-center gap-2">
+              Manage Existing Projects
+            </h2>
+          </div>
+          <div className="p-6">
+            {projects.length === 0 ? (
+              <p className="text-text/60 text-sm">No projects created yet.</p>
+            ) : (
+              <div className="space-y-4">
+                {projects.map(project => (
+                  <div key={project.id} className="flex items-center justify-between p-4 bg-background border border-text/10 rounded-lg hover:border-primary/30 transition-colors">
+                    <div className="flex items-center gap-4">
+                      {project.coverImage && (
+                        <img src={project.coverImage} alt={project.title} className="w-16 h-16 object-cover rounded-md" />
+                      )}
+                      <div>
+                        <h4 className="font-medium text-text">{project.title}</h4>
+                        <p className="text-xs text-text/60">{project.client} • {project.workImages?.length || 0} work images</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => {
+                        if (window.confirm(`Are you sure you want to delete "${project.title}"? This will also remove its images from the gallery.`)) {
+                          deleteProject(project.id);
+                        }
+                      }}
+                      className="p-2 text-red-500 hover:bg-red-50 rounded-md transition-colors"
+                      title="Delete Project"
+                    >
+                      <Trash2 size={20} />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
       </div>
     </div>
   );
