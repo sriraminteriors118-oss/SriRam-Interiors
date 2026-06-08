@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import ProprietorSection from '../components/ProprietorSection'
 import Services from '../components/Services'
+import GalleryPreview from '../components/GalleryPreview'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <ProprietorSection />
       <Services />
+      <GalleryPreview />
     </main>
   )
 }

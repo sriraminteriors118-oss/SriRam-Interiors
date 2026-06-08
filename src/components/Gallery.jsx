@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useSearchParams } from 'react-router-dom';
 
 import { useAppData } from '../context/AppDataContext';
 
@@ -9,11 +10,27 @@ const categories = [
   { id: 'kitchen', label: 'Kitchen' },
   { id: 'bedroom', label: 'Bedrooms' },
   { id: 'commercial', label: 'Commercial' },
+  { id: 'glass', label: 'Glass Works' },
 ];
 
 const Gallery = () => {
-  const [activeTab, setActiveTab] = useState('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryParam = searchParams.get('category') || 'all';
+  const [activeTab, setActiveTab] = useState(categoryParam);
   const { galleryItems } = useAppData();
+
+  useEffect(() => {
+    setActiveTab(categoryParam);
+  }, [categoryParam]);
+
+  const handleTabChange = (catId) => {
+    setActiveTab(catId);
+    if (catId === 'all') {
+      setSearchParams({});
+    } else {
+      setSearchParams({ category: catId });
+    }
+  };
 
   const filteredImages = activeTab === 'all' 
     ? galleryItems 
@@ -45,7 +62,7 @@ const Gallery = () => {
             {categories.map((cat) => (
               <button
                 key={cat.id}
-                onClick={() => setActiveTab(cat.id)}
+                onClick={() => handleTabChange(cat.id)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeTab === cat.id 
                     ? 'bg-primary text-white shadow-md' 

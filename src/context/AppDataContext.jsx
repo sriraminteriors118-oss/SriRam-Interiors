@@ -11,6 +11,7 @@ const initialGalleryData = [
   { id: 6, category: 'commercial', title: 'Executive Office Suite', src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800' },
   { id: 7, category: 'bedroom', title: 'Bespoke Wardrobe Design', src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&q=80&w=800' },
   { id: 8, category: 'living', title: 'Open Plan Dining Area', src: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=800' },
+  { id: 9, category: 'glass', title: 'Modern Glass Partition', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800' },
 ];
 
 const initialProjectsData = [
