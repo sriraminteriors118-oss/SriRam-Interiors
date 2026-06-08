@@ -32,10 +32,6 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-2xl"
           >
-            <div className="inline-block px-4 py-1.5 mb-6 border border-primary/20 rounded-full bg-primary/5 text-primary text-sm font-medium tracking-wide">
-              Premium Interior Design & Custom Furniture
-            </div>
-            
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif text-text leading-tight mb-6">
               Crafting Spaces, <br/>
               <span className="text-primary italic">Defining Lifestyles.</span>
@@ -45,7 +41,7 @@ const Hero = () => {
               Elevate your home with our bespoke interior solutions and high-end custom furniture, designed with meticulous attention to detail and uncompromising quality.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a 
                 href="tel:+917995998118" 
                 className="group flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-sm hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg font-medium tracking-wide text-center"
@@ -59,6 +55,10 @@ const Hero = () => {
               >
                 Book a Consultation
               </a>
+            </div>
+            
+            <div className="inline-block px-4 py-1.5 border border-primary/20 rounded-full bg-primary/5 text-primary text-sm font-medium tracking-wide">
+              Premium Interior Design & Custom Furniture
             </div>
           </motion.div>
 

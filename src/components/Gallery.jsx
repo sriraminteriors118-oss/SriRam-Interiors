@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Mock data for the gallery
-const portfolioData = [
-  { id: 1, category: 'living', title: 'Modern Minimalist Lounge', src: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=800' },
-  { id: 2, category: 'kitchen', title: 'Contemporary Island Kitchen', src: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, category: 'bedroom', title: 'Luxury Master Suite', src: 'https://images.unsplash.com/photo-1522771731478-44fb90e816a1?auto=format&fit=crop&q=80&w=800' },
-  { id: 4, category: 'living', title: 'Classic Elegance Living', src: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800' },
-  { id: 5, category: 'kitchen', title: 'Scandinavian Oak Kitchen', src: 'https://images.unsplash.com/photo-1556156653-e5a7c69cc263?auto=format&fit=crop&q=80&w=800' },
-  { id: 6, category: 'commercial', title: 'Executive Office Suite', src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800' },
-  { id: 7, category: 'bedroom', title: 'Bespoke Wardrobe Design', src: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&q=80&w=800' },
-  { id: 8, category: 'living', title: 'Open Plan Dining Area', src: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=800' },
-];
+import { useAppData } from '../context/AppDataContext';
 
 const categories = [
   { id: 'all', label: 'All Projects' },
@@ -23,10 +13,11 @@ const categories = [
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState('all');
+  const { galleryItems } = useAppData();
 
   const filteredImages = activeTab === 'all' 
-    ? portfolioData 
-    : portfolioData.filter(img => img.category === activeTab);
+    ? galleryItems 
+    : galleryItems.filter(img => img.category === activeTab);
 
   return (
     <section id="gallery" className="py-24 bg-background">
