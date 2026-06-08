@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Utensils, Tv, BedDouble, Building2, Component, ArrowUpRight } from 'lucide-react';
+import { Utensils, Tv, BedDouble, Building2, Component } from 'lucide-react';
 
 const servicesData = [
   {
@@ -78,10 +78,6 @@ const Services = () => {
                 <p className="text-text/70 leading-relaxed mb-6">
                   {service.description}
                 </p>
-
-                <div className="absolute bottom-8 right-8 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-primary">
-                  <ArrowUpRight size={24} />
-                </div>
               </motion.div>
             );
           })}
