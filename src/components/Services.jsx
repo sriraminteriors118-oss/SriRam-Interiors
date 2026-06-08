@@ -1,31 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Utensils, Armchair, LayoutPanelLeft, Building2, ArrowUpRight } from 'lucide-react';
+import { Utensils, Tv, BedDouble, Building2, Component, ArrowUpRight } from 'lucide-react';
 
 const servicesData = [
   {
     id: 'kitchens',
-    title: 'Modular Kitchens',
+    title: 'Kitchen Room Works',
     description: 'Bespoke culinary spaces combining cutting-edge functionality with timeless aesthetics, tailored to your cooking style.',
     icon: Utensils,
   },
   {
     id: 'living',
-    title: 'Living Spaces',
-    description: 'Harmonious and luxurious living rooms designed to be the perfect backdrop for your family life and entertaining.',
-    icon: Armchair,
+    title: 'Living Room/TV unit',
+    description: 'Harmonious living rooms and premium TV units designed to be the perfect backdrop for your family life and entertaining.',
+    icon: Tv,
   },
   {
-    id: 'wardrobes',
-    title: 'Custom Wardrobes',
-    description: 'Intelligent storage solutions crafted with premium materials, perfectly integrated into your bedroom architecture.',
-    icon: LayoutPanelLeft,
+    id: 'bedroom',
+    title: 'Bedroom Designs',
+    description: 'Luxurious and relaxing bedroom interiors with intelligent storage solutions perfectly integrated into the architecture.',
+    icon: BedDouble,
   },
   {
     id: 'commercial',
-    title: 'Commercial Fit-outs',
+    title: 'Commercial Spaces',
     description: 'Inspiring workspaces and commercial environments that reflect your brand identity and optimize productivity.',
     icon: Building2,
+  },
+  {
+    id: 'glass',
+    title: 'Glass Related Works',
+    description: 'Elegant glass partitions, custom mirrors, and architectural glass solutions that add a touch of modern sophistication.',
+    icon: Component,
   }
 ];
 
@@ -49,7 +55,7 @@ const Services = () => {
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service, index) => {
             const Icon = service.icon;
             return (
