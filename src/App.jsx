@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AppDataProvider } from './context/AppDataContext'
+import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import ContactFooter from './components/ContactFooter'
 import Home from './pages/Home'
@@ -14,6 +15,7 @@ function App() {
   return (
     <AppDataProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <div className="min-h-screen bg-background font-sans text-text flex flex-col">
           <Navbar />
           <div className="flex-grow">

@@ -6,7 +6,7 @@ import { useAppData } from '../context/AppDataContext';
 
 const categories = [
   { id: 'all', label: 'All Projects' },
-  { id: 'living', label: 'Living Room' },
+  { id: 'living', label: 'Living Room/TV unit' },
   { id: 'kitchen', label: 'Kitchen' },
   { id: 'bedroom', label: 'Bedrooms' },
   { id: 'commercial', label: 'Commercial' },
@@ -105,11 +105,6 @@ const Gallery = () => {
           </AnimatePresence>
         </motion.div>
 
-        <div className="mt-16 text-center">
-           <button className="inline-flex items-center justify-center border-b-2 border-primary pb-1 text-primary hover:text-text hover:border-text transition-colors duration-300 font-medium tracking-wide uppercase text-sm">
-             View All Projects
-           </button>
-        </div>
       </div>
     </section>
   );
