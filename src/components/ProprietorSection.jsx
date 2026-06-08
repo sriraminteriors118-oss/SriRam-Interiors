@@ -16,9 +16,9 @@ const ProprietorSection = () => {
             className="order-2 lg:order-1 relative rounded-lg overflow-hidden shadow-xl h-[500px]"
           >
             <img 
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
-              alt="Professional Manager" 
-              className="w-full h-full object-cover"
+              src="/Prope-Image.jpeg" 
+              alt="Shiva Porandla - Proprietor" 
+              className="w-full h-full object-cover object-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
