@@ -20,10 +20,10 @@ const ProprietorSection = () => {
               alt="Shiva Porandla - Proprietor" 
               className="w-full h-full object-cover object-top"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <h3 className="text-2xl font-serif mb-1">Shiva Porandla</h3>
-              <p className="text-white/80 tracking-wide uppercase text-sm font-medium">Proprietor</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-white z-10 drop-shadow-md">
+              <h3 className="text-3xl font-serif mb-1 text-white">Shiva Porandla</h3>
+              <p className="text-white/90 tracking-wide uppercase text-sm font-semibold">Proprietor</p>
             </div>
           </motion.div>
 
