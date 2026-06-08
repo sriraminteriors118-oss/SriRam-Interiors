@@ -37,7 +37,7 @@ const Gallery = () => {
     : galleryItems.filter(img => img.category === activeTab);
 
   return (
-    <section id="gallery" className="py-24 bg-background">
+    <section id="gallery" className="pt-32 lg:pt-40 pb-20 bg-surface min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
