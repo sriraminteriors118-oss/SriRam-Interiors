@@ -5,7 +5,7 @@ import { Utensils, Tv, BedDouble, Building2, Component } from 'lucide-react';
 const servicesData = [
   {
     id: 'kitchens',
-    title: 'Kitchen Room Works',
+    title: 'Kitchen Interior Works',
     description: 'Bespoke culinary spaces combining cutting-edge functionality with timeless aesthetics, tailored to your cooking style.',
     icon: Utensils,
   },

@@ -35,7 +35,7 @@ const ProprietorSection = () => {
             className="order-1 lg:order-2 space-y-6"
           >
             <h2 className="text-sm font-bold text-primary tracking-widest uppercase">Proprietor</h2>
-            <h3 className="text-4xl md:text-5xl font-serif text-text">Dedicated to Customer Satisfaction</h3>
+            <h3 className="text-4xl md:text-5xl font-serif text-text">Commitment to Excellence</h3>
             <p className="text-lg text-text/80 leading-relaxed">
               At SriRam Interiors, our Proprietor <span className="font-semibold text-text">Shiva Porandla</span> takes a hands-on approach to ensure every client is fully satisfied. He closely follows up on the progress of each project, consistently engaging with customers to guarantee the best possible output for their homes and spaces.
             </p>

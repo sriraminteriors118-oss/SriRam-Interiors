@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const previewCategories = [
-  { id: 'kitchen', label: 'Kitchen Room Works', src: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800' },
+  { id: 'kitchen', label: 'Kitchen Interior Works', src: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800' },
   { id: 'living', label: 'Living Room/TV unit', src: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=800' },
   { id: 'bedroom', label: 'Bedroom Designs', src: 'https://images.unsplash.com/photo-1522771731478-44fb90e816a1?auto=format&fit=crop&q=80&w=800' },
   { id: 'commercial', label: 'Commercial Spaces', src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800' },

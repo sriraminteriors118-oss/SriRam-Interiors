@@ -7,7 +7,7 @@ import { useAppData } from '../context/AppDataContext';
 const categories = [
   { id: 'all', label: 'All Projects' },
   { id: 'living', label: 'Living Room/TV unit' },
-  { id: 'kitchen', label: 'Kitchen' },
+  { id: 'kitchen', label: 'Kitchen Interior Works' },
   { id: 'bedroom', label: 'Bedrooms' },
   { id: 'commercial', label: 'Commercial' },
   { id: 'glass', label: 'Glass Works' },
