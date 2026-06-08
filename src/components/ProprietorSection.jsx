@@ -34,17 +34,17 @@ const ProprietorSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="order-1 lg:order-2 space-y-6"
           >
-            <h2 className="text-sm font-bold text-primary tracking-widest uppercase">Leadership</h2>
-            <h3 className="text-4xl md:text-5xl font-serif text-text">Guided by Experience</h3>
+            <h2 className="text-sm font-bold text-primary tracking-widest uppercase">Proprietor</h2>
+            <h3 className="text-4xl md:text-5xl font-serif text-text">Dedicated to Customer Satisfaction</h3>
             <p className="text-lg text-text/80 leading-relaxed">
-              At SriRam Interiors, most of our flagship projects are directly handled and supervised by our Proprietor, <span className="font-semibold text-text">Shiva Porandla</span>. With a keen eye for detail and a passion for creating bespoke spaces, Shiva ensures that every project meets the highest standards of luxury and functionality.
+              At SriRam Interiors, our Proprietor <span className="font-semibold text-text">Shiva Porandla</span> takes a hands-on approach to ensure every client is fully satisfied. He closely follows up on the progress of each project, consistently engaging with customers to guarantee the best possible output for their homes and spaces.
             </p>
             
             <ul className="space-y-4 pt-4">
               {[
-                "Direct supervision on critical milestones",
-                "Personalized material selection guidance",
-                "End-to-end quality assurance"
+                "Over 25+ successfully completed projects",
+                "Regular customer engagement and updates",
+                "Close follow-up on daily work progress"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3 text-text/80">
                   <CheckCircle2 className="text-primary" size={20} />
