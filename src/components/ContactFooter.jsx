@@ -226,7 +226,7 @@ const ContactFooter = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text/60">
           <p>&copy; {new Date().getFullYear()} Sri Ram Interiors & Furniture. All rights reserved.</p>
           <div className="flex gap-6 items-center">
-            <a href="https://www.instagram.com/sri_sai_ram_interiors?utm_source=qr&igsh=MWwzM2w2Yms3b3preQ==" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/sri__ram_interiors?utm_source=qr&igsh=MWwzM2w2Yms3b3preQ%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
