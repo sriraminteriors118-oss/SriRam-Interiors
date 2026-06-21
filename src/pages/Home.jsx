@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import ProprietorSection from '../components/ProprietorSection'
 import Services from '../components/Services'
+import WhyChooseUs from '../components/WhyChooseUs'
 import GalleryPreview from '../components/GalleryPreview'
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <ProprietorSection />
       <Services />
       <GalleryPreview />
+      <WhyChooseUs />
     </main>
   )
 }

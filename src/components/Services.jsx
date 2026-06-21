@@ -1,37 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Utensils, Tv, BedDouble, Building2, Component } from 'lucide-react';
+import { Utensils, LayoutGrid, Layers, Component, Wrench } from 'lucide-react';
 
 const servicesData = [
   {
     id: 'kitchens',
-    title: 'Kitchen Interior Works',
-    description: 'Bespoke culinary spaces combining cutting-edge functionality with timeless aesthetics, tailored to your cooking style.',
+    title: 'Modular Kitchen',
+    description: 'Custom-designed modular kitchens that blend seamless functionality with modern aesthetics.',
     icon: Utensils,
   },
   {
-    id: 'living',
-    title: 'Living Room/TV unit',
-    description: 'Harmonious living rooms and premium TV units designed to be the perfect backdrop for your family life and entertaining.',
-    icon: Tv,
+    id: 'wardrobes',
+    title: 'Modular Wardrobes',
+    description: 'Elegant and spacious modular wardrobes tailored to fit your storage needs perfectly.',
+    icon: LayoutGrid,
   },
   {
-    id: 'bedroom',
-    title: 'Bedroom Designs',
-    description: 'Luxurious and relaxing bedroom interiors with intelligent storage solutions perfectly integrated into the architecture.',
-    icon: BedDouble,
+    id: 'ceiling-paneling',
+    title: 'False Ceiling & Wall Paneling',
+    description: 'Innovative false ceiling designs and stylish wall paneling to elevate your interiors.',
+    icon: Layers,
   },
   {
-    id: 'commercial',
-    title: 'Commercial Spaces',
-    description: 'Inspiring workspaces and commercial environments that reflect your brand identity and optimize productivity.',
-    icon: Building2,
-  },
-  {
-    id: 'glass',
-    title: 'Glass Related Works',
-    description: 'Elegant glass partitions, custom mirrors, and architectural glass solutions that add a touch of modern sophistication.',
+    id: 'aluminium-glass',
+    title: 'Aluminium, Glass',
+    description: 'Premium aluminium and glass works for contemporary partitions, windows, and decor.',
     icon: Component,
+  },
+  {
+    id: 'wpc-solutions',
+    title: 'WPV Solutions',
+    description: 'Durable and aesthetic WPV solutions for modern, beautiful, and sustainable spaces.',
+    icon: Wrench,
   }
 ];
 
