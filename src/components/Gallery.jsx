@@ -88,12 +88,23 @@ const Gallery = () => {
                 transition={{ duration: 0.4 }}
                 className="break-inside-avoid relative group overflow-hidden rounded-sm"
               >
-                <img 
-                  src={item.src} 
-                  alt={item.title} 
-                  className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
+                {item.src.match(/\.(mp4|webm|mov)$/i) ? (
+                  <video
+                    src={item.src}
+                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                ) : (
+                  <img 
+                    src={item.src} 
+                    alt={item.title} 
+                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                   <span className="text-white/80 text-sm uppercase tracking-wider mb-1">
                     {categories.find(c => c.id === item.category)?.label}
